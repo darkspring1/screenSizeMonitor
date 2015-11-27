@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="components">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="Vendor/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="Vendor/bootstrap/dist/css/bootstrap.css"/>
+
+    <title></title>
+</head>
+<body>
+
+<div class="container" ng-controller="mainCtrl">
+    <div ng-repeat="viewModel in viewModels" class="row" >
+       <div class="col-md-4">{{viewModel.name}}</div>
+        <div class="col-md-4">calls: {{viewModel.calls}}</div>
+        <div class="col-md-2"><button class="btn btn-default" ng-click="viewModel.addHandler()">Add Handler</button></div>
+        <div class="col-md-2"><button class="btn btn-default" ng-click="viewModel.removeHandler()">Remove Handler</button></div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="Vendor/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="Vendor/lodash/lodash.js"></script>
+<script type="text/javascript" src="Vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="Vendor/angular/angular.js"></script>
+
+<script type="text/javascript" src="module.js"></script>
+<script type="text/javascript" src="screenSizeMonitor.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "screenSizeMonitor",
+  "directory": "Vendor",
+  "version": "1.0.0",
+  "authors": [
+    "ol't egor"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+	"components-font-awesome": "",
+    "angular": "~1.4",
+    "bootstrap": "~3.3",
+	"jquery": "~2",
+	"lodash": "~3"
+  }
+}
